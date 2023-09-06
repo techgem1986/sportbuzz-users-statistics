@@ -1,5 +1,5 @@
 def handler(event, context):
-    uid = event['uid']
+    uid = event.uid
     return {
         "statusCode": 200,
         "headers": {
