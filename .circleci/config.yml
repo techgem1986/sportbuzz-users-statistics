@@ -12,4 +12,4 @@ workflows:
           dockerfile: Dockerfile
           path: .
           repo: sportbuzz-users-statistics-python
-          tag: "$CIRCLE_SHA1"
+          tag: latest

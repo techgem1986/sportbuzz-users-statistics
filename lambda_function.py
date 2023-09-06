@@ -1,8 +1,9 @@
 def handler(event, context):
+    uid = event['params']['uid']
     return {
         "statusCode": 200,
         "headers": {
             "Content-Type": "application/json"
         },
-        "body": "Welcome to AWS Lambda using Python"
+        "body": "Welcome " + uid + "to AWS Lambda using Python"
     }
