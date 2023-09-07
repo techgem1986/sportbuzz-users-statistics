@@ -1,5 +1,8 @@
+
 def handler(event, context):
-    uid = event.uid
+    print(event)
+    print(context)
+    uid = event['queryStringParameters']['uid']
     return {
         "statusCode": 200,
         "headers": {
